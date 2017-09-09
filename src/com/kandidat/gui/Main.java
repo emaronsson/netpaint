@@ -28,7 +28,10 @@ import com.kandidat.rityta.multi.DrawingActivityMulti;
 import com.kandidat.rityta.single.DrawingActivitySingle;
 
 /**
- * Class for the main menu.
+ * Handling of the main menu - allowing to start in single- or multi-
+ * player mode or to enter the options.
+ *
+ * Note: Modified by boemma
  */
 public class Main extends Activity {
 	
@@ -36,12 +39,12 @@ public class Main extends Activity {
 	private final boolean D  = false;
 	private final String tag = "Main";
 	
-	/** The different types of connection supported */
+	/** The different types of connections supported */
 	public enum MultiController {
 		TCP, BLUETOOTH;
 	};
 	
-	/** Boolean used to prevent the lock releasing when it's not supposed to */
+	/** Used to prevent the lock releasing when it's not supposed to */
 	private boolean finReq = false;
 	
 	/** TCP will be selected for transmission when starting the application*/
@@ -72,8 +75,8 @@ public class Main extends Activity {
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         setContentView(R.layout.menu_main);
        
-        tf = Typeface.createFromAsset(getAssets(),
-                "fonts/PAINP___.TTF");
+        tf = Typeface.createFromAsset(getAssets(), 
+	"fonts/PAINP___.TTF");
         TextView tv = (TextView) findViewById(R.id.title);
         tv.setTypeface(tf);
         TextView tv2 = (TextView) findViewById(R.id.title2);
@@ -233,7 +236,7 @@ public class Main extends Activity {
 		private final String C_THREAD = "ConnectThread";
 		
 		/**
-		 * TODO: Add description
+		 * Establish a connection for TCP/IP or Bluetooth
 		 * @param C_THREAD 
 		 */
 		@SuppressWarnings("static-access")
@@ -272,7 +275,8 @@ public class Main extends Activity {
 		}
 		
 		/**
-		 * TODO: Add description
+		 * Finish the establishment of connection and start in multiplayer 
+                 * mode if successful.
 		 */
 		public void finished(final boolean result) {
 			handler.post(new Runnable() {

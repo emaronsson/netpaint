@@ -64,19 +64,10 @@ public class NetworkHandling {
 	    	
 	    	if(clientSocket != null && outToServer != null && inFromServer != null) {
 				listenThread = new ListenThread(inFromServer);
-				listenThread.start();
-//				lock.release();	    		
+				listenThread.start();	
 	    	}
 	    		
 	    	lock.release();
-	    	
-//			} finally {
-//				listenThread = new ListenThread(inFromServer);
-//				listenThread.start();
-//				lock.release();
-//			}
-	    	
-	    	
 	}
 	
 	/**
