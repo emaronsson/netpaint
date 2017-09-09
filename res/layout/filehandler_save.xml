@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="15dp"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >    
+
+        <EditText
+            android:id="@+id/filename_editbox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/hint" >
+
+            <requestFocus />
+            
+        </EditText>
+
+        <Button
+            android:id="@+id/file_save_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/file_save_button"
+            android:textSize="25dp" />
+
+</LinearLayout>

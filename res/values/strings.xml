@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NetPaint</string>
+    
+    <!-- Main menu -->
+    <string name="singleplayer">En spelare</string>
+    <string name="multiplayer">Flera spelare</string>
+    <string name="options">Alternativ</string>
+    <string name="con_err">Fel vid anslutning</string>
+    
+    <!-- Singleplayer -->
+    <string name="singleplayer_new">Vill du rensa ritytan?</string>
+    
+    <!-- Multiplayer -->
+    <string name="header_multiplayer">Flera spelare</string>
+    <string name="multiplayer_list_btn_text">Anslut</string>
+    <string name="multiplayer_list_item_text">Exempeltext</string>
+    
+    <string name="multiplayer_player_joined">En spelare kom in i rummet</string>
+    <string name="multiplayer_player_quit">En spelare lämnade rummet</string>
+    <string name="multiplayer_player_join_success">Anslutning lyckades</string>
+	<string name="multiplayer_switch_friends_title">Nytt spel</string>
+    <string name="multiplayer_switch_friends">Vill du byta rum?</string>
+    <string name="multiplayer_switch_blue">Vill du sluta rita med din motspelare?</string>
+    <string name="multiplayer_newgame">Nytt rityta</string>
+    
+    <string name="err_mess">Felaktigt paket</string> 
+      
+    <!-- Multiplayer connecting dialog -->
+    <string name="connecting_to">Ansluter</string>
+    
+    <!-- Options -->
+    <string name="header_options">Alternativ</string>
+    <string name="opt_connection">Anslutning</string>
+    <string name="btn_umts1">Spela via Internet</string>
+    <string name="btn_umts2">(3G/WiFi)</string>
+    <string name="btn_bt">Spela med kompis</string>
+    <string name="btn_bt2">(Bluetooth)</string>
+    <string name="txt_umts_chosen">3G/WiFi valt för kommunikation</string>
+    <string name="txt_btooth_chosen">Bluetooth valt för kommunikation</string>
+    <string name="bt_error">Kan inte fortsätta utan Bluetooth, valde 3G/WiFi istället</string>
+    
+    <!-- Brush Dialog -->
+    <string name="brush_fx_title">Färg / Effekt</string>
+    <string name="brush_size_title">Penselstorlek</string>
+    <string name="btn_ok">Ok</string>
+    <string name="fx1_text">Normal</string>
+    <string name="fx2_text">Relief</string>
+    <string name="fx3_text">Oskärpa</string>
+    <string name="fx4_text">Skugga</string>
+    
+    <!-- Eraser Dialog -->
+    <string name="eraser_title">Suddgummi</string>
+    <string name="erasorSize">Suddstorlek</string> 
+    
+    <!-- Brush options -->
+    <string name="btn_redo">Gör om</string>
+    <string name="btn_undo">Ångra</string>
+    <string name="btn_brush">Pensel</string>
+    
+    <!-- Icon options -->
+    <string name="ico_new">Nytt spel</string>
+    <string name="ico_load">Ladda bild</string>
+    <string name="ico_save">Spara bild</string>
+    
+    <!-- File management dialogs  -->
+    <string name="pic_saved">Bild sparad i programminne</string>
+    <string name="external_notavailable">Lagring ej tillgänglig</string>
+    <string name="successful_load">Lyckad inläsning</string>
+    <string name="save_dialog_title">Spara fil</string>
+    <string name="file_save_button">Spara</string>
+    <string name="hint">Skriv filnamnet..</string>
+    <string name="load_dialog_title">Läs in fil</string>  
+    
+    <!-- File management, replace dialog -->
+    <string name="replace_dialog_title">Åtgärd</string>
+    <string name="replace_dialog_text">Filen existerar. Vill du ersätta den nuvarande filen?</string>
+    <string name="replace_dialog_yes">Ersätt</string>
+    <string name="replace_dialog_no">Avbryt</string>
+    
+    <!-- Quit dialog -->
+    <string name="quit_yes">Ja</string>
+    <string name="quit_no">Nej</string>
+    <string name="quit_text">Är du säker på att du vill avsluta?</string>
+    <string name="quit_title">Avsluta?</string>
+   
+    <!-- Quit draw dialog -->
+    <string name="quitDraw_title">Sluta måla?</string>
+    <string name="quitDraw_text">Är du säker på att du vill sluta måla?</string>
+    
+    <!-- Drawing surface tips -->
+    <string name="brush_help">Tips: Håll inne penselknappen för att välja pensel.</string>
+    <string name="erase_help">Tips: Håll inne suddknappen för att ändra storlek.</string>
+    <string name="zoom_help">Tips: Du kan zooma bilden genom att hålla fingret på skärmen tills den vibrerar och sedan dra fingret upp eller ner.</string>
+    <string name="zoom_help2">Tips: Håll inne zoom-knappen för att återställa bilden till normal storlek.</string>
+    
+    <!--  DeviceListActivity -->
+    <string name="title_paired_devices">Enheter du kopplats ihop med:</string>
+    <string name="title_other_devices">Andra tillgängliga enheter</string>
+    <string name="button_scan">Sök efter enheter</string>
+    <string name="scanning">Söker efter enheter…</string>
+    <string name="select_device">Välj en enhet att ansluta till</string>
+    <string name="none_paired">Inga enheter har blivit ihopkopplade</string>
+    <string name="none_found">Inga enheter funna</string>  
+    
+    <!-- Bluetooth -->
+    <string name="connect_fail">Uppkoppling misslyckades</string>
+	<string name="connect_lost">Den andra användaren är inte längre tillgänglig</string>
+	
+	 <!-- Toasts -->
+    <string name="new_player_added">En ny spelare har anslutit sig.</string>
+	<string name="numb_players">Antal spelare</string>
+	<string name="player_left">En spelare lämnade rummet.</string>
+	<string name="join_success">Du kom in i ett rum.</string>
+	
+</resources>

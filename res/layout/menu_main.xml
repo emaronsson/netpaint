@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="fill_parent" 
+			  android:layout_height="fill_parent"  
+			  android:orientation="vertical"
+			  android:baselineAligned="false"
+			  android:weightSum="100"
+			  android:gravity="center_vertical|center_horizontal"
+			  android:background="@drawable/back5">
+			  
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" 
+                android:layout_weight="20"
+                android:gravity="center" 
+                android:orientation="vertical"
+                android:layout_marginRight="15dp">
+
+                <TextView android:text="@string/app_name"
+                    android:id="@+id/title"
+				  	android:textSize="70sp"
+				  	android:textColor="#000000"
+				  	android:textStyle="bold|italic"
+				  	android:layout_width="wrap_content"
+				  	android:layout_height="150dp"
+				  	android:layout_marginTop="53dp"
+				  	android:layout_marginLeft="29dp" />
+                
+                 <TextView android:text="@string/app_name"
+                    android:id="@+id/title2"
+				  	android:textSize="70sp"
+				  	android:textColor="#ffd700"
+				  	android:textStyle="bold|italic"
+				  	android:layout_width="wrap_content"
+				  	android:layout_height="150dp"
+				  	android:layout_marginTop="50dp"
+				  	android:layout_marginLeft="24dp" />
+
+            </RelativeLayout>
+    
+		<LinearLayout android:layout_width="fill_parent"
+      				  android:layout_height="fill_parent"
+      				  android:layout_weight="80"
+      				  android:layout_marginTop="-40dp"
+      				  android:layout_marginLeft="75dp"
+      				  android:layout_marginRight="75dp"
+      				  android:orientation="vertical"
+      				  android:gravity="center_vertical|center_horizontal">
+	    
+			<Button android:id="@+id/single"
+					android:text="@string/singleplayer" 
+					android:textSize="30sp"
+					android:textStyle="bold" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="30dp"
+					android:background="@drawable/selector_single" />
+					
+			<Button android:id="@+id/multi"
+					android:text="@string/multiplayer" 
+					android:textSize="30sp"
+					android:textStyle="bold" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="30dp"
+					android:background="@drawable/selector_single" />
+					
+			<Button android:id="@+id/options"
+					android:text="@string/options" 
+					android:textSize="30sp"
+					android:textStyle="bold" 
+					android:layout_width="fill_parent" 
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="30dp"
+					android:background="@drawable/selector_single" />
+					
+			</LinearLayout>
+</LinearLayout>	

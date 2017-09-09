@@ -1,0 +1,67 @@
+DATA_MESSAGE
+msg_id = 0: 
+Regular data package with coordinates
+    Contains:
+        byte player_id = ID of sending user
+        short path_id = Unique path id
+        short coordinates[] = list of coordinates to draw		
+        int time_stamp = time stamp for when the path was created
+
+-----------------------------------------------------------------------------------------------
+PLAYER_JOINED
+msg_id = 1: 
+A new player has joined
+    Contains:
+        byte player_id = ID of player who joined the game 
+	
+-----------------------------------------------------------------------------------------------
+PLAYER_QUIT
+msg_id = 2: 
+A player has quit the game
+    Contains:
+        byte player_id = ID of player who left the game 
+
+-----------------------------------------------------------------------------------------------
+JOIN_SUCCESS		
+msg_id = 3
+Successfully joined a room, and been notified have many players are currently playing
+    Contains:
+        byte player_id = my ID number in the my current room 
+        byte members = number of members in the current room
+
+------------------------------------------------------------------------------------------------
+HISTORY_MESSAGE
+msg_id = 4
+A message containing the gathered history of the room
+    Contains:
+        ArrayList<MessagePacket> history = array list of message packets
+		
+-----------------------------------------------------------------------------------------------
+REMOVE_PATH
+msg_id = 5
+A message if a specific path needs to be removed
+    Contains:
+        short path_id = unique path id
+	
+------------------------------------------------------------------------------------------------
+BRUSH_MESSAGE
+msg_id = 6
+A message containing brush information
+    Contains:
+        byte player_id = sending members user id
+        short r = red color
+        short g = green color
+        short b = blue color
+        short alpha = alpha value 
+        byte brush_size = stroke width
+        boolean[4] effects = boolean/binary array for effects 
+
+------------------------------------------------------------------------------------------------
+QUIT_MESSAGE
+msg_id = 7
+Message to the server to close connection
+    Contains:
+        bool closeDown = true if close down is wanted
+
+
+

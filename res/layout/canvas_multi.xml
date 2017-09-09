@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="100"
+    android:background="@color/grey" >
+    
+    <com.kandidat.rityta.multi.DrawingViewMulti
+        android:id="@+id/drawingViewMulti" 
+ 		android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:layout_weight="15"
+    	 />
+    
+	<TableLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:layout_weight="85"
+	    android:background="@color/white">
+    
+    	<!-- Menu Line -->
+    	<LinearLayout
+	        android:layout_height="5dp"
+	        android:layout_width="fill_parent"
+	        android:layout_gravity="center_horizontal"
+	        android:background="@color/light_grey" />
+       
+    	<!-- Icon Row -->
+		<TableRow
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"
+	    	android:layout_marginTop="5dp"
+	    	android:weightSum="5">
+	    
+			<ToggleButton 
+		    	android:id="@+id/brushButton"
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent"
+		    	android:layout_weight="1"
+		    	android:layout_margin="3dp"
+		    	android:textOn=""
+		    	android:textOff=""
+		   		android:background="@drawable/selector_brush" /> 
+	   
+	   		<ToggleButton
+	        	android:id="@+id/eraserButton"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_margin="3dp"
+				android:textOn=""
+		    	android:textOff=""
+				android:background="@drawable/selector_eraser"/>
+	   
+	   		<ToggleButton
+	       		android:id="@+id/zoomButton"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_margin="3dp"
+				android:textOn=""
+		    	android:textOff=""
+				android:background="@drawable/selector_zoom"/>
+	   		
+	   		<Button 
+		    	android:id="@+id/undoButton"
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="fill_parent"
+		  		android:layout_weight="1"
+		  		android:layout_marginLeft="3dp"
+		  		android:background="@drawable/selector_undo" />
+	   		
+	   		<Button 
+	        	android:id="@+id/redoButton"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_weight="1"
+		  		android:layout_marginRight="3dp"
+				android:background="@drawable/selector_redo"/> 
+		  		
+		</TableRow> 
+    
+	</TableLayout> 
+
+</LinearLayout>
